@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 import tempfile
 import os
-from yeelight import Bulb, BulbException
+from yeelight import Bulb, BulbException, PowerMode
 
 WEBSITE_URL_TEMPLATE = "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=%s"
 DB_FILE_NAME_TEMPLATE = "YeeLightGPW.%s.data"
