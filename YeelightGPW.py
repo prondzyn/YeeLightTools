@@ -19,6 +19,8 @@ def main(args):
   if previousPrice != currentPrice:
     setBulbColor(bulb, previousPrice, currentPrice, lighterModeFactor)
     storeCurrentPrice(stockSymbol, currentPrice)
+  else:
+    bulb.set_power_mode(PowerMode.NORMAL)
 
 def getDb(stockSymbol):
   tempDir = tempfile.gettempdir()
